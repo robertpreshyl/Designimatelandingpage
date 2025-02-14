@@ -1,9 +1,9 @@
 {
-  "name": "animejs",
-  "version": "3.2.2",
+  "name": "designimate-landing-page",
+  "version": "1.0.0",
   "homepage": "http://animejs.com",
   "repository": "juliangarnier/anime",
-  "description": "JavaScript animation engine",
+  "description": "Designimate Landing Page",
   "umd:main": "lib/anime.min.js",
   "module": "lib/anime.es.js",
   "main": "lib/anime.js",
@@ -14,7 +14,9 @@
     "lib"
   ],
   "scripts": {
-    "build": "node build"
+    "build": "cp -r . public/",
+    "dev": "serve .",
+    "start": "serve public"
   },
   "bugs": {
     "url": "https://github.com/juliangarnier/anime/issues"
@@ -28,6 +30,9 @@
     "SVG",
     "canvas"
   ],
+  "dependencies": {
+    "serve": "^14.2.4"
+  },
   "devDependencies": {
     "gzip-size": "^4.1.0",
     "pretty-bytes": "^4.0.2",
