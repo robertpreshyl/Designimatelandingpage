@@ -1,0 +1,8 @@
+name = "designimate-landing-page"
+account_id = "f3289e58c5ceb1dbf05f5496646ec17a"
+workers_dev = true
+main = "src/index.js"
+compatibility_date = "2024-02-14"
+
+[site]
+bucket = "./public"
